@@ -2,6 +2,8 @@
 // All logik för katter och filer ligger i CatRepository.
 Console.WriteLine("Hello, CatJson!");
 
+// var cr = new CatSqliteRepository(@"c:\git\cats.db"); <--Mysql
+// Filepath används inte av SQLite
 var cr = new CatRepository();
 cr.FilePath = @"c:\git";
 cr.LoadCats(); // laddar befintliga katter från fil innan menyn visas

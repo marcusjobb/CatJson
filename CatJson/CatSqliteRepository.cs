@@ -32,6 +32,8 @@ public class CatSqliteRepository : CatRepositoryBase
     }
 
     // Laddar alla katter från databasen in i minneslistan
+    // Inte optimal lösning men OK för denna enkla applikation
+    // I normala fall skulle vi låtit databasen hantera allt
     public override void LoadCats()
     {
         cats = new();
